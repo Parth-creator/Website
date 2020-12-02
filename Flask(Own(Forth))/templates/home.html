@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Flask Blog | Home Page{% endblock %}
+{% block style %}
+div.bi{
+	background:url("https://cdn.hipwallpaper.com/i/93/35/oHse64.jpg") no-repeat 0 -400px;
+	background-size: cover;	
+	font-family: 'Montserrat';
+	color: #dbdbdb;
+	padding: 100px;
+	width:100%; 
+	height: 600px;
+}
+
+span.custom{
+	font-weight:strong;
+}
+
+span.SyneMono{
+	font-family: 'Syne Mono';
+}
+
+a.about{
+	color:#dbdbdb;
+	text-decoration: none;
+}
+
+a.about:hover{
+	color: #c9c9c9;
+}
+{% endblock %}
+{% block content %}
+<div class="bi">
+	<h1 style="font-size: 60px;text-align: center; font">Home Page</h1><br><br>
+
+	<p style="text-align: center; font-size: 50px;"> Hey There, I am <b><span class="custom"><a href="http://localhost:5000/about" class="about">Parth Singh</a></span></b>, <br>a <b><span class="custom">Full-Stack Developer</span></b> from <span class="SyneMono" >India.</span></p>
+
+</div>
+{% endblock %}

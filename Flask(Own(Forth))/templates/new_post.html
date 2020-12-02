@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Flask Blog | New Post{% endblock %}
+
+{% block content %}
+<form action="http://localhost:5000/post/new" method='post'>
+	<input type="text" name="title" class="form-control" placeholder="Title" style="width: 500px"><br>
+	<input type="email" name="em" class="form-control" placeholder="Email" style="width: 500px"><br>
+	<textarea name="msg" class="form-control" placeholder="Enter the post" style="width: 500px;min-height: 100px"></textarea><br><br>
+	<input type="submit" class="btn btn-primary" value="Commit Post">
+</form>
+{% endblock %}

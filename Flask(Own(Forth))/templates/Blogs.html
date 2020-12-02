@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Flask Blog | Home Page{% endblock %}
+
+{% block content %}
+<h1 class="container" style="font-family: 'Montserrat';font-size: 60px;padding-left: 90px">Posts</h1><br><br>
+{% for i in found_user %}
+	<div style="background-color: #e6e6e6;width: 50%;border-radius: 5px;padding: 10px;margin: auto;font-family: 'Montserrat'">
+		<h1>{{i.title}}</h1>
+		<p>By <b>{{i.email}}</b> on <b>{{i.date_posted}}</b></p><hr>
+		<p>{{i.content}}</p>
+	</div>
+	<br><br>
+{% endfor %}
+{% endblock %}
